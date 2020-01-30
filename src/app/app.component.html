@@ -1,0 +1,9 @@
+<div>
+  <h1>WELCOME TO THE MACHINE</h1>
+  <h2>KEVIN S. or K. SPACEY</h2>
+</div>
+<app-capa-hijo *ngFor="let alumno of alumnos" [alumno]="alumno" (newItemEvent)="deleteKevin($event)"></app-capa-hijo>
+
+<br><hr>
+
+<app-capa-hijo-anyadir (newAlumnoEvent)="crearKevin($event)"></app-capa-hijo-anyadir>
